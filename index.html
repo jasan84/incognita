@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">	
+	<link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+
+	<div class="row no-gutters">
+
+		
+		<div class="col-md-6 maquina" id="col1">
+
+			<div class="teclado">
+				<div class="row">
+					<button class="tecla" id="Qgen" value="Q" onClick="letraQ();" >Q</button>
+					<button class="tecla" id="Wgen" value="W" onClick="letraW();" >W</button>
+					<button class="tecla" id="Egen" value="E" onClick="letraE();" >E</button>
+					<button class="tecla" id="Rgen" value="R" onClick="letraR();" >R</button>
+					<button class="tecla" id="Tgen" value="T" onClick="letraT();" >T</button>
+					<button class="tecla" id="Ygen" value="Y" onClick="letraY();" >Y</button>
+					<button class="tecla" id="Ugen" value="U" onClick="letraU();" >U</button>
+					<button class="tecla" id="Igen" value="I" onClick="letraI();" >I</button>
+					<button class="tecla" id="Ogen" value="O" onClick="letraO();" >O</button>
+					<button class="tecla" id="Pgen" value="P" onClick="letraP();" >P</button>
+				</div>
+		
+
+			<div class="row">
+					<button class="tecla" id="Agen" value="A" onClick="letraA();" >A</button>
+					<button class="tecla" id="Sgen" value="S" onClick="letraS();" >S</button>
+					<button class="tecla" id="Dgen" value="D" onClick="letraD();" >D</button>
+					<button class="tecla" id="Fgen" value="F" onClick="letraF();" >F</button>
+					<button class="tecla" id="Ggen" value="G" onClick="letraG();" >G</button>
+					<button class="tecla" id="Hgen" value="H" onClick="letraH();" >H</button>
+					<button class="tecla" id="Jgen" value="J" onClick="letraJ();" >J</button>
+					<button class="tecla" id="Kgen" value="K" onClick="letraK();" >K</button>
+					<button class="tecla" id="Lgen" value="L" onClick="letraL();" >L</button>
+					<button class="tecla" id="Ñgen" value="Ñ" onClick="letraÑ();" >Ñ</button>
+			</div>
+		
+
+			<div class="row">
+					<button class="tecla" id="Zgen" value="Z" onClick="letraZ();" >Z</button>
+					<button class="tecla" id="Xgen" value="X" onClick="letraX();" >X</button>
+					<button class="tecla" id="Cgen" value="C" onClick="letraC();" >C</button>
+					<button class="tecla" id="Vgen" value="V" onClick="letraV();" >V</button>
+					<button class="tecla" id="Bgen" value="B" onClick="letraB();" >B</button>
+					<button class="tecla" id="Ngen" value="N" onClick="letraN();" >N</button>
+					<button class="tecla" id="Mgen" value="M" onClick="letraM();" >M</button>
+			</div>
+
+			<div class="row">
+				<button class="espacio" id="espacioGen" value=" " onClick="espacioGen();"></button>
+
+
+			<div class="row no-gutters" id="mensajeGenerado">
+				
+			</div>
+
+			<div class="row no-gutters" id="mensajeCodificado">
+				
+			</div>
+		</div>
+
+	</div><div class="row">
+		<button class="perilla" id="clave1Gen" onClick="clave1Generar();">|</button>CLAVE 1
+		<button  class="perilla"id="clave2Gen" onClick="clave2Generar();">|</button>
+		<button class="perilla" id="clave3Gen" onClick="clave3Generar();">|</button>
+	</div>
+
+	</div>
+
+
+
+
+		<div class="col-md-6 maquina" id="col1">
+
+				<div id="visor">
+					<div class="row">
+						<div class="salida" id="Qvisor" value="Q">Q</div>
+						<div class="salida" id="Wvisor" value="W">W</div>
+						<div class="salida" id="Evisor" value="E">E</div>
+						<div class="salida" id="Rvisor" value="R">R</div>
+						<div class="salida" id="Tvisor" value="T">T</div>
+						<div class="salida" id="Yvisor" value="Y">Y</div>
+						<div class="salida" id="Uvisor" value="U">U</div>
+						<div class="salida" id="Ivisor" value="I">I</div>
+						<div class="salida" id="Ovisor" value="O">O</div>
+						<div class="salida" id="Pvisor" value="P">P</div>
+					</div>
+			
+
+				<div class="row">
+						<div class="salida" id="Avisor" value="A">A</div>
+						<div class="salida" id="Svisor" value="S">S</div>
+						<div class="salida" id="Dvisor" value="D">D</div>
+						<div class="salida" id="Fvisor" value="F">F</div>
+						<div class="salida" id="Gvisor" value="G">G</div>
+						<div class="salida" id="Hvisor" value="H">H</div>
+						<div class="salida" id="Jvisor" value="J">J</div>
+						<div class="salida" id="Kvisor" value="K">K</div>
+						<div class="salida" id="Lvisor" value="L">L</div>
+						<div class="salida" id="Ñvisor" value="Ñ">Ñ</div>
+				</div>
+			
+
+				<div class="row">
+						<div class="salida" id="Zvisor" value="Z">Z</div>
+						<div class="salida" id="Xvisor" value="X">X</div>
+						<div class="salida" id="Cvisor" value="C">C</div>
+						<div class="salida" id="Vvisor" value="V">V</div>
+						<div class="salida" id="Bvisor" value="B">B</div>
+						<div class="salida" id="Nvisor" value="N">N</div>
+						<div class="salida" id="Mvisor" value="M">M</div>
+				</div>
+			</div>
+
+
+
+
+
+
+				<div class="teclado">
+					<div class="row">
+						<button class="tecla" id="Qing" value="Q" onClick="letraQing();" >Q</button>
+						<button class="tecla" id="Wing" value="W" onClick="letraWing();" >W</button>
+						<button class="tecla" id="Eing" value="E" onClick="letraEing();" >E</button>
+						<button class="tecla" id="Ring" value="R" onClick="letraRing();" >R</button>
+						<button class="tecla" id="Ting" value="T" onClick="letraTing();" >T</button>
+						<button class="tecla" id="Ying" value="Y" onClick="letraYing();" >Y</button>
+						<button class="tecla" id="Uing" value="U" onClick="letraUing();" >U</button>
+						<button class="tecla" id="Iing" value="I" onClick="letraIing();" >I</button>
+						<button class="tecla" id="Oing" value="O" onClick="letraOing();" >O</button>
+						<button class="tecla" id="Ping" value="P" onClick="letraPing();" >P</button>
+					</div>
+			
+
+				<div class="row">
+						<button class="tecla" id="Aing" value="A" onClick="letraAing();" >A</button>
+						<button class="tecla" id="Sing" value="S" onClick="letraSing();" >S</button>
+						<button class="tecla" id="Ding" value="D" onClick="letraDing();" >D</button>
+						<button class="tecla" id="Fing" value="F" onClick="letraFing();" >F</button>
+						<button class="tecla" id="Ging" value="G" onClick="letraGing();" >G</button>
+						<button class="tecla" id="Hing" value="H" onClick="letraHing();" >H</button>
+						<button class="tecla" id="Jing" value="J" onClick="letraJing();" >J</button>
+						<button class="tecla" id="King" value="K" onClick="letraKing();" >K</button>
+						<button class="tecla" id="Ling" value="L" onClick="letraLing();" >L</button>
+						<button class="tecla" id="Ñing" value="Ñ" onClick="letraÑing();" >Ñ</button>
+				</div>
+			
+
+				<div class="row">
+						<button class="tecla" id="Zing" value="Z" onClick="letraZing();" >Z</button>
+						<button class="tecla" id="Xing" value="X" onClick="letraXing();" >X</button>
+						<button class="tecla" id="Cing" value="C" onClick="letraCing();" >C</button>
+						<button class="tecla" id="Ving" value="V" onClick="letraVing();" >V</button>
+						<button class="tecla" id="Bing" value="B" onClick="letraBing();" >B</button>
+						<button class="tecla" id="Ning" value="N" onClick="letraNing();" >N</button>
+						<button class="tecla" id="Ming" value="M" onClick="letraMing();" >M</button>
+				</div>
+
+				<div class="row">
+					<button class="espacio" id="espacioIng" value=" " onClick="espacioIng();"></button>
+
+				</div><div class="row">
+					<button id="clave1Ing" onClick="clave1Ingresar();">CLAVE 1</button>
+					<button id="clave2Ing" onClick="clave2Ingresar();">CLAVE 2</button>
+					<button id="clave3Ing" onClick="clave3Ingresar();">CLAVE 3</button>
+				</div>
+
+
+				<div class="row no-gutters" id="mensajeCodificadoIng">
+					
+				</div>
+
+				<div class="row no-gutters" id="mensajeDecodificado">
+					
+				</div>
+			</div>
+		</div>
+			
+		</div>
+
+	</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="js/decodificador.js"></script>
+	
+</body>
+
+
+
+</html>
