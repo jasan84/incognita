@@ -1,6 +1,6 @@
 # Repositorio
 
-<b>Tercer ejercicio JavaScript personal. </b>
+<b>Tercer ejercicio JavaScript personal. Dic-2019 </b>
 
 Recreación básica de la máquina "Enigma" de cifrado de mensajes, con tres opciones distintas de clave de cifrado/descifrado.
 (diseño visual en proceso).
